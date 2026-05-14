@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Mesi di Noi - Chri & Sofy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rosa-chiaro: #ffe4e1;
+            --rosa-scuro: #ffb6c1;
+            --cuore: #e91e63;
+            --testo: #4a4a4a;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fffafb;
+            color: var(--testo);
+        }
+
+        /* --- Homepage --- */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('6.jpeg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(3rem, 10vw, 5rem);
+            color: var(--cuore);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: var(--rosa-scuro);
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: 0.3s;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            background: var(--cuore);
+            transform: scale(1.05);
+        }
+
+        /* --- Sezioni Mesi --- */
+        section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .month-card {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .month-card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 5px solid var(--rosa-chiaro);
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: var(--cuore);
+            margin-bottom: 15px;
+        }
+
+        p { line-height: 1.6; font-size: 1rem; }
+
+        /* --- Bottone Sorpresa Video --- */
+        .btn-sorpresa {
+            display: inline-block;
+            background: var(--cuore);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn-sorpresa:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+        }
+
+        .back-to-top {
+            margin-top: 20px;
+            display: inline-block;
+            color: var(--rosa-scuro);
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Colori Sfondi Sezioni */
+        #mese1 { background-color: #fff0f5; }
+        #mese2 { background-color: #fce4ec; }
+        #mese3 { background-color: #f8bbd0; }
+        #mese4 { background-color: #f48fb1; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chri & Sofy</h1>
+		
+        <p class="subtitle">LA COPPIA PIU' ODIATA E AMATA DI TUTTE</p>
+        <nav>
+            <a href="#mese1">1° Mese</a>
+            <a href="#mese2">2° Mese</a>
+            <a href="#mese3">3° Mese</a>
+            <a href="#mese4">4° Mese</a>
+        </nav>
+    </header>
+
+    <!-- MESE 1 -->
+    <section id="mese1">
+        <div class="month-card">
+            <h2>Il Primo Mese</h2>
+            <img src="1.jpeg" alt="Noi">
+            <p>Il primo mese con te è stato come scoprire una parte di me che non conoscevo. Tutto era nuovo, un po’ confuso forse, ma incredibilmente bello. Con te anche le cose più semplici sembravano diverse.</p>
+            <a href="#" class="back-to-top">↑ Home</a>
+        </div>
+    </section>
+
+    <!-- MESE 2 -->
+    <section id="mese2">
+        <div class="month-card">
+            <h2>Il Secondo Mese</h2>
+            <img src="2.jpeg" alt="Noi">
+            <p>Nel secondo mese ho iniziato ad affezionarmi a te in un modo diverso. Non era più solo felicità del momento, ma proprio la sensazione di stare bene con una persona che ormai era diventata parte delle mie giornate</p>
+            <a href="#" class="back-to-top">↑ Home</a>
+        </div>
+    </section>
+
+    <!-- MESE 3 -->
+    <section id="mese3">
+        <div class="month-card">
+            <h2>Il Terzo Mese</h2>
+          <img src="5.jpeg" alt="Noi">
+            <p>Abbiamo avuto momenti belli, momenti difficili, ma siamo ancora qui. E forse è proprio questo che mi piace di noi: non siamo perfetti, ma ci scegliamo comunque.</p>
+            
+            <!-- LINK ALLA PAGINA VIDEO -->
+            <a href="video.html" class="btn-sorpresa">Apri la sorpresa 🎥</a>
+            
+            <br>
+            <a href="#" class="back-to-top">↑ Home</a>
+        </div>
+    </section>
+
+    <!-- MESE 4 -->
+    <section id="mese4">
+        <div class="month-card">
+            <h2>Il Quarto Mese</h2>
+            <img src="4.jpeg" alt="Noi">
+			
+            <p>Quattro mesi sembrano pochi, ma con te ho vissuto emozioni che sembrano molto più grandi del tempo passato. Grazie per ogni momento, per ogni risata, per esserci stata fino ad ora. Spero che questo sia solo l’inizio.</p>
+            <a href="#" class="back-to-top">↑ Home</a>
+        </div>
+    </section>
+
+</body>
+</html>
